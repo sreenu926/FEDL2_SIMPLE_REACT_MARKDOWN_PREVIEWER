@@ -1,3 +1,6 @@
+    // 1. Setting Up the Environment: The code starts with an Immediately Invoked Function Expression (IIFE) to encapsulate 
+    // everything within its scope and uses use strict for stricter coding practices.
+    
 !(function () {
   "use strict";
 
