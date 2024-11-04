@@ -23,6 +23,12 @@
     return '<a target="_blank" href="'.concat(e, '">').concat(a, "</a>");
   };
 
+        // 2. A React component class named t is defined. This class represents the entire Markdown previewer application.
+                // The constructor initializes the component's state with three properties:
+                // markdown: Stores the Markdown text entered by the user (initially set to a sample text r).
+                // editorMaximized: Boolean indicating if the editor pane is maximized (initially false).
+                // previewMaximized: Boolean indicating if the preview pane is maximized (initially false).
+    
   class t extends React.Component {
     constructor(e) {
       super(e),
