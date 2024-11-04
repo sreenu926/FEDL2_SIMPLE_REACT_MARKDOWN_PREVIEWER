@@ -4,6 +4,9 @@
 !(function () {
   "use strict";
 
+    // It imports the marked library for parsing Markdown text into HTML.
+    // It configures marked to automatically add line breaks (breaks: true) and uses Prism.js for syntax highlighting of code blocks (highlight function).
+    
   marked.setOptions({
     breaks: !0,
     highlight: function (e) {
