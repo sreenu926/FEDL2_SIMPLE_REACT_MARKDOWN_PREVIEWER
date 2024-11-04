@@ -153,3 +153,6 @@
     
   ReactDOM.render(React.createElement(t, null), document.getElementById("app"));
 })();
+
+// Overall, this code demonstrates how React components interact with each other to build a web application for 
+// live previewing of Markdown text.
