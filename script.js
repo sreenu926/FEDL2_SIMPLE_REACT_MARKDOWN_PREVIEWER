@@ -14,6 +14,9 @@
     },
   });
 
+    // A new marked.Renderer object (e) is created to customize how Markdown elements are rendered as HTML.
+    // The link function within the renderer modifies how links are displayed, adding a target="_blank" attribute to open links in a new tab.
+    
   const e = new marked.Renderer();
 
   e.link = function (e, t, a) {
