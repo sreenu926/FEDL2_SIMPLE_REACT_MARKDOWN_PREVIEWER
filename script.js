@@ -57,6 +57,17 @@
       this.setState({ previewMaximized: !this.state.previewMaximized });
     }
 
+        // The render function defines the application's layout and elements:
+            // It uses a conditional statement to determine the classes applied to the editor and preview panes based on the maximized state.
+            // It uses React.createElement to create various React elements: A main container (div).
+            // The editor pane (div with editorWrap class):
+            // A toolbar component (a) displaying the title "Editor" and a maximize/minimize button.
+            // A textarea component (n) for the user to enter Markdown text.
+            // A separator (div with converter class).
+            // The preview pane (div with dynamic class based on maximized state):
+            // A toolbar component (a) displaying the title "Previewer" and a maximize/minimize button.
+            // A div component (i) displaying the HTML preview of the entered Markdown text using marked and the custom renderer (e).
+      
     render() {
       const e = this.state.editorMaximized
         ? ["editorWrap maximized", "previewWrap hide", "fa fa-compress"]
