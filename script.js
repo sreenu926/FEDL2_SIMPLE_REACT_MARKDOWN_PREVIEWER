@@ -25,9 +25,9 @@
 
         // 2. A React component class named t is defined. This class represents the entire Markdown previewer application.
                 // The constructor initializes the component's state with three properties:
-                // markdown: Stores the Markdown text entered by the user (initially set to a sample text r).
-                // editorMaximized: Boolean indicating if the editor pane is maximized (initially false).
-                // previewMaximized: Boolean indicating if the preview pane is maximized (initially false).
+                    // markdown: Stores the Markdown text entered by the user (initially set to a sample text r).
+                    // editorMaximized: Boolean indicating if the editor pane is maximized (initially false).
+                    // previewMaximized: Boolean indicating if the preview pane is maximized (initially false).
     
   class t extends React.Component {
     constructor(e) {
@@ -37,6 +37,12 @@
           editorMaximized: !1,
           previewMaximized: !1,
         }),
+
+        // The class also defines several functions for handling user interactions:
+                // handleChange: Updates the markdown state based on the user's input in the editor.
+                // handleEditorMaximize: Toggles the editorMaximized state to maximize/minimize the editor pane.
+                // handlePreviewMaximize: Toggles the previewMaximized state to maximize/minimize the preview pane.
+    
         (this.handleChange = this.handleChange.bind(this));
       this.handleEditorMaximize = this.handleEditorMaximize.bind(this);
       this.handlePreviewMaximize = this.handlePreviewMaximize.bind(this);
